@@ -105,9 +105,6 @@ def first_page_articles(driver, journal_id, limit):
 def scrape_articles(driver, max_page, journal_id, url, limit):
     '''
         Function to scrape other pages
-        
-        references: list of references from first page scrape
-        
     '''
     references = first_page_articles(driver, journal_id, limit)
     
