@@ -81,7 +81,7 @@ def scrape_article_details(driver, link, journal_id):
             ## retry for one time if fail
             print(e)
             flag+=1
-    if flag == 2: return [False,False,False]
+    if flag == 2: return False
     return [reference_text, journal_id, journal_name]
     
 
